@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Current News - CourtSiide</title>
+  <style>
+    body {
+      background: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 300vh;
+    }
+    header {
+      display: flex;
+      background: rgb(242, 140, 40);
+      padding: 40px 30px;
+      text-align: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-family: "Arial";
+      letter-spacing: 10px;
+      font-weight: bold;
+    }
+    main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: auto auto auto;
+      flex-grow: 1;
+      padding: 25px 30px;
+      gap: 20px;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      background: black; /* Changed from gray to black */
+      color: white;
+      justify-content: center;
+      gap: 30px;
+    }
+    nav ul li a {
+      font-size: 20px;
+      color: white;
+      padding: 10px 20px;
+      font-weight: bold;
+      display: block;
+      transition: 0.3s;
+    }
+    img {
+      width: 150px;
+      height: auto;
+      text-align: center;
+      box-shadow: 5px 5px 1px black; /* Changed to black */
+    }
+    footer {
+      background-color: black; /* Changed from gray to black */
+      color: white;
+      text-align: center;
+      padding: 25px 30px;
+      margin-top: 20px;
+      position: relative;
+    }
+    footer img {
+      max-width: 100px;
+      margin-top: 10px;
+    }
+    #featured-news {
+      background: white;
+      font-size: 25px;
+      text-align: center;
+      border-radius: 5px;
+      box-shadow: 5px 5px 10px black; /* Changed to black */
+    }
+    #recent-news {
+      background: white;
+      font-size: 25px;
+      text-align: center;
+      border-radius: 5px;
+      box-shadow: 5px 5px 10px black; /* Changed to black */
+    }
+    #upcoming-games {
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+      background: white;
+      text-align: center;
+      margin: 20px auto;
+      border-radius: 5px;
+      box-shadow: 5px 5px 10px black; /* Changed to black */
+    }
+    #upcoming-games li {
+      font-size: 25px;
+      font-weight: 400;
+      padding: 10px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+    ul li {
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CourtSiide - NBA Current News</h1>
+    <nav>
+      <ul>
+        <li class="Page_Header"><a href="">Log in</a></li>
+        <li class="Page_Header"><a href="index.html">Home</a></li>
+        <li class="Page_Header"><a href="">Teams</a></li>
+        <li class="Page_Header"><a href="">Standings</a></li>
+        <li class="Page_Header"><a href="">Players</a></li>
+        <li class="Page_Header"><a href="">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="featured-news">
+      <h2>Featured News</h2>
+      <article>
+        <h3>Latest NBA Headline</h3>
+        <p>Luka is already making strides with the Lakers. <a href="#">Read more</a></p>
+        <p>Kyrie is out for the season, what does this mean for the Mavericks? <a href="#">Read more</a></p>
+        <p>Anthony Davis out with injury. <a href="#">Read more</a></p>
+      </article>
+    </section>
+    
+    <section id="recent-news">
+      <h2>Recent News</h2>
+      <ul>
+        <li class="News_article"><a href="#">Battle of the Goats: Stephan A. Smith Vs. Lebron</a></li>
+        <li class="News_article"><a href="#">Power Rankings: Where does each team stand</a></li>
+        <li class="News_article"><a href="#">Breaking: Trade deadline updates</a></li>
+        <li class="News_article"><a href="#">LeBron James reaches another milestone</a></li>
+        <li class="News_article"><a href="#">Top 5 plays of the week</a></li>
+        <li class="News_article"><a href="#">Injury report: Latest updates</a></li>
+      </ul>
+    </section>
+
+    <section id="upcoming-games">
+      <h2>Upcoming NBA Games</h2>
+      <ul>
+        <li class="game_date"><a href="#">Hornets vs. Hawks - March 12, 2025</a></li>
+        <li class="game_date"><a href="#">76ers vs. Raptors - March 12, 2025</a></li>
+        <li class="game_date"><a href="#">Clippers vs. Heat - March 12, 2025</a></li>
+        <li class="game_date"><a href="#">Thunder vs. Celtics - March 12, 2025</a></li>
+        <li class="game_date"><a href="#">Mavericks vs. Spurs - March 12, 2025</a></li>
+        <li class="game_date"><a href="#">Jazz vs. Grizzlies - March 12, 2025</a></li>
+        <li class="game_date"><a href="#">Suns vs. Rockets - March 12, 2025</a></li>
+        <li class="game_date"><a href="#">Knicks vs. Trail Blazers - March 12, 2025</a></li>
+      </ul>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 CourtSiide - All Rights Reserved.</p>
+    <img src="https://res.cloudinary.com/dh8qsxbuy/image/upload/v1741744664/courtside_c4uujb.jpg" alt="CourtSiide Logo"/>
+  </footer>
+</body>
+</html>
